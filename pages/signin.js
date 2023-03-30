@@ -7,7 +7,7 @@ export default function SignIn() {
   const router = useRouter()
 
   const [state, setState] = useState({
-    username: "",
+    email: "",
     password: ""
   })
 
@@ -39,8 +39,8 @@ export default function SignIn() {
       <div className={styles.container}>
         <h1 className={styles.title}>Sign In</h1>
         <div className={styles.form}>
-          <input className={styles.input} type="text" name="username" placeholder="username" value={state.username} onChange={handleChange} autoComplete="off" />
-          <input className={styles.input} type="password" name="password" placeholder="password" value={state.password} onChange={handleChange} />
+          <input className={styles.input} type="text" name="email" placeholder="Enter Email" value={state.email} onChange={handleChange} autoComplete="off" />
+          <input className={styles.input} type="password" name="password" placeholder="Enter password" value={state.password} onChange={handleChange} />
           <button className={styles.btn} onClick={handleSubmit}>Submit</button>
         </div>
       </div>
